@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rohit P — Code & Concept Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              'signature': ['"Dancing Script"', 'cursive'],
+            },
+            colors: {
+              'accent': '#FBBF24', // amber-400
+              'header-bg': '#283A46',
+              'primary-text': '#1F2937',
+              'light-bg': '#FFFFFF',
+            },
+          },
+        },
+      }
+    </script>
+    <style>
+      body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #FFFFFF;
+      }
+      @keyframes float {
+        0% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+        100% {
+          transform: translateY(0px);
+        }
+      }
+      .animate-float {
+        animation: float 6s ease-in-out infinite;
+      }
+      @keyframes rotate-sketch-1 {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+      @keyframes rotate-sketch-2 {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(-360deg); }
+      }
+      .animate-rotate-sketch-1, .animate-rotate-sketch-2 {
+        transform-origin: center;
+      }
+      .animate-rotate-sketch-1 {
+        animation: rotate-sketch-1 20s linear infinite;
+      }
+      .animate-rotate-sketch-2 {
+        animation: rotate-sketch-2 25s linear infinite;
+      }
+      @keyframes blink {
+        50% {
+          border-color: transparent;
+        }
+      }
+      .animate-blink {
+        animation: blink 0.75s step-end infinite;
+      }
+      
+      /* New Animations */
+      @keyframes preloader-scale {
+        0% { transform: scale(0.8); opacity: 0.5; }
+        50% { transform: scale(1.1); opacity: 1; }
+        100% { transform: scale(1); opacity: 1; }
+      }
+      
+      @keyframes sparkle {
+        0% {
+            transform: scale(1) rotate(0deg);
+            opacity: 1;
+        }
+        100% {
+            transform: scale(0) rotate(180deg);
+            opacity: 0;
+        }
+      }
+
+      .sparkle {
+        position: fixed;
+        width: 8px;
+        height: 8px;
+        background-color: #FBBF24;
+        border-radius: 50%;
+        pointer-events: none;
+        z-index: 9999;
+        animation: sparkle 0.7s forwards;
+        transform-origin: center;
+      }
+      
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .animate-fade-in-up {
+        animation: fadeInUp 0.7s ease-out forwards;
+      }
+    </style>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0"
+  }
+}
+</script>
+</head>
+  <body class="text-primary-text">
+    <div id="root"></div>
+  </body>
+</html>
